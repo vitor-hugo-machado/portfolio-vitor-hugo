@@ -1,0 +1,148 @@
+.menu {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: width 0.8s ease-in-out;
+}
+
+.menu h1 {
+    display: none;
+}
+
+.menu ul li h3 {
+    display: none;
+}
+
+.menu ul {
+    height: 170px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(20px)
+
+}
+
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 50px; /* Garante altura mínima */
+    color: #b8b8b8;
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color: #0FE9C7;
+}
+
+.menu ul li a:active {
+    color: #014137;
+}
+
+
+
+.menu .social-media-menu {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-menu .social-media-menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.big-menu {
+    width: 300px;
+    z-index: 1;
+}
+
+.big-menu h3 {
+    font-weight: 200;
+}
+
+
+.logo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.logo h1{
+    font-size: 30px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.menu ul li a {
+    color: #b8b8b8;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 100%;
+}
+
+
+.big-menu .social-media-menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.big-menu {
+    width: 300px;
+    z-index: 1;
+}
+
+.big-menu h3 {
+    font-weight: 200;
+}
+
+.big-menu .logo h1 {
+    display: block
+}
+
+.big-menu ul li h3 {
+    display: block;
+}
+
+.big-menu ul li .menu-icon {
+    display: none;
+}
+
+#arrow {
+    font-size: 30px;
+    position: absolute;
+    top: 49%;
+    right: 0;
+    transform: translateX(110%);
+    color: #b8b8b8;
+    transition: color 0.3s ease;
+}
+
+#arrow:hover {
+    color: #0FE9C7;
+}
+
+#arrow:active{
+    color: #014137;
+}
+
+.big-menu #arrow {
+    transform: rotate(180deg);
+}
