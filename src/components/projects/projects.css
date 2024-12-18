@@ -1,0 +1,67 @@
+.projects {
+    height: 100%;
+    transform: translateX(5%);
+}
+
+.projects h1 {
+    margin: 60px 0;
+}
+
+.project {
+    height: 300px;
+    width: 850px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid #10E7C5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.project .photo-and-tools .photo {
+    width: 400px;
+}
+
+.project .photo-and-tools .tools {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    
+}
+
+.project .photo-and-tools .tools span{
+    font-size: 40px;
+    margin: 0 15px;
+}
+
+.project .project-description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    width: 50%;
+}
+
+.project .project-description h3 {
+    font-size: 30px;
+
+}
+
+.project .project-description button {
+    width: 30%;
+    height: 10%;
+    align-self: center;
+    background-color: transparent;
+    border: 2px solid #10E7C5;
+    color: #10E7C5;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.project .project-description button:hover {
+    background-color: #4b4a4a;
+}
