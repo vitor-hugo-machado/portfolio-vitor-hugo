@@ -1,6 +1,4 @@
 #root {
-  display: grid;
-  grid-template-columns:60px auto;
   width: 100%;
   margin: 0 auto;
   text-align: center; 
@@ -8,7 +6,10 @@
 }
 
 main {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }

@@ -1,5 +1,4 @@
 import "./home.css"
-import SocialMedia from "../social-media/social-media";
 
 function Home() {
     return (
@@ -17,7 +16,7 @@ function Home() {
             <div className="photo-and-button">
             <div className="photo-profile">
                 <div className="background-image"></div>
-                <img src="./public/images/Mask.jpg" alt="mask" width={250} />
+                <img src="/images/Mask.jpg" alt="mask" width={250} />
             </div>
             <button>CONTATO</button>
             </div>

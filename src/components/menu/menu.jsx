@@ -1,7 +1,7 @@
 import './menu.css'
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faUser, faFile, faPhone, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faUser, faFileAlt, faPhone, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from '../social-media/social-media';
 
 function Menu() {
@@ -50,7 +50,7 @@ function Menu() {
                 </li>
                 <li>
                     <a href='#'>
-                        <FontAwesomeIcon className='menu-icon' icon={faFile} />
+                        <FontAwesomeIcon className='menu-icon' icon={faFileAlt} />
                         <h3 className='menu-item-name'>PROJETOS</h3>
                     </a>
                 </li>
