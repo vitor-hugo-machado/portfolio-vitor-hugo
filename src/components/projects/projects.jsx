@@ -41,7 +41,6 @@ function Projects() {
                 )
                 )}
             </div>
-            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
         </div>
     )
 }

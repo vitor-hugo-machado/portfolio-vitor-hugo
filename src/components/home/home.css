@@ -6,17 +6,6 @@
     position: relative;
 }
 
-.section-home h6 {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-40%);
-    font-size: 15px;
-    color: #5d5c5c;
-    font-weight: 200;
-    padding: 60px 0 10px;
-}
-
 .home-container {
     display: flex;
     justify-content: space-between;
@@ -99,4 +88,100 @@
     background-color: #10E7C5;
     color: black;
     cursor: pointer;
+}
+
+
+@media(max-width: 1030px){
+    .section-home .home-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 100px 0;
+    }
+
+    .data-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-home h6 {
+        bottom: 0;
+        transform: translatex(-50%);
+        width: 100%;
+        font-size: 12px;
+
+    }
+}
+
+@media(max-width: 430px) {
+
+    .section-home {
+        padding: 100px 0;
+        height: 600px;
+    }
+    .section-home .home-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 100px 0;
+    }
+
+   .photo-profile {
+        width: 200px;
+    }
+
+   .photo-profile img{
+        width: 200px;
+    }
+
+    .background-image {
+        width: 98%;
+        height: 98%;
+        border: 1px solid #fff;
+    }
+
+    .photo-and-button a {
+        height: 30px;
+        padding: 2px;
+        font-weight: 100;
+        border: 1px solid #10E7C5;
+        transform: translateY(18px);
+    }
+
+    .data-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .data-profile .name h1 {
+        font-size: 30px;
+        
+    }
+
+    .home-skills {
+        align-items: center;
+        width: 170px;
+        align-self: center;
+    }
+
+    .data-profile .home-skills h3 {
+        font-size: 20px;
+    }
+
+    .data-profile .home-skills h1 {
+        font-size: 28px;
+    }
+
+    .section-home h6 {
+        bottom: 0;
+        transform: translatex(-50%);
+        width: 100%;
+    }
 }

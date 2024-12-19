@@ -32,6 +32,7 @@
 }
 
 .container-contact h5 {
+    width: 100%;
     font-size: 20px;
     font-weight: 300;
 }
@@ -39,5 +40,11 @@
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 4%;
+    gap: 1%;
+}
+
+@media(max-width: 347px) {
+    .container-contact h5 {
+        font-size: 15px;
+    }
 }

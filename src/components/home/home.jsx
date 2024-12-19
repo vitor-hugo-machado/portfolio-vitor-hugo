@@ -24,7 +24,7 @@ function Home() {
 
 
             </div>
-            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
+            
         </div>
     )
 }

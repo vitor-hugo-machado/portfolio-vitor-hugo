@@ -46,7 +46,7 @@ function Skills() {
                 <h3>GitFlow <span> | </span> GitHub<span> | </span>Context Api<span> | </span>Fetch Api<span> | </span>Styled Components</h3>
             </div>
 
-            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
+        
         </div>
     )
 }

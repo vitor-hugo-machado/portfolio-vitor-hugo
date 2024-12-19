@@ -7,32 +7,34 @@ import Contact from './components/contact/contact';
 import { useState } from 'react';
 
 function App() {
- 
+
 
   const [activeSection, setActiveSection] = useState("Home");
 
   const renderSection = () => {
-      switch (activeSection) {
-          case "Home":
-              return <Home />;
-          case "Skills":
-              return <Skills />;
-          case "Projects":
-              return <Projects />;
-          case "Contact":
-              return <Contact />;
-          default:
-              return <Home />;
-      }
+    switch (activeSection) {
+      case "Home":
+        return <Home />;
+      case "Skills":
+        return <Skills />;
+      case "Projects":
+        return <Projects />;
+      case "Contact":
+        return <Contact />;
+      default:
+        return <Home />;
+    }
   };
-  
+
 
   return (
     <>
       <Menu setActiveSection={setActiveSection} />
       <main>
-      {/* {renderSection()} */}
+        {renderSection()}
+        <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
       </main>
+      
     </>
   )
 }

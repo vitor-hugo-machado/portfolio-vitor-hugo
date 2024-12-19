@@ -14,8 +14,6 @@ function Contact() {
             <div className="social-media">
             <a className='icon-social-media' href="https://github.com/vitor-hugo-machado" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
             <a className='icon-social-media' href="https://www.linkedin.com/in/vitor-hugo-alves-machado-82b73a320/" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a> </div>
-
-            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
         </div>
     )
 }
