@@ -11,7 +11,7 @@ function Menu({ setActiveSection }) {
         const menu = document.querySelector('.menu');
     
         const handleMenuToggle = () => {
-            menu.classList.toggle('big-menu'); // Alterna o estado do menu
+            menu.classList.toggle('menu-large'); // Alterna o estado do menu
             hamburger.classList.toggle('active'); // Alterna o estado do botão
         };
     
