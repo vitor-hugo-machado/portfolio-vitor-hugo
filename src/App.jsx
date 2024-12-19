@@ -7,6 +7,7 @@ import Contact from './components/contact/contact';
 import { useState } from 'react';
 
 function App() {
+ 
 
   const [activeSection, setActiveSection] = useState("Home");
 
@@ -30,7 +31,7 @@ function App() {
     <>
       <Menu setActiveSection={setActiveSection} />
       <main>
-      {renderSection()}
+      {/* {renderSection()} */}
       </main>
     </>
   )

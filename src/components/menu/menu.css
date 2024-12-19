@@ -24,8 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(20px)
-
+    transform: translateY(-40px)
 }
 
 .menu ul li a {
@@ -33,9 +32,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
-    min-height: 50px; /* Garante altura mínima */
+    min-height: 50px;
     color: #b8b8b8;
-    text-decoration: none; /* Remove sublinhado padrão */
+    text-decoration: none;  
     transition: color 0.3s ease;
     cursor: pointer;
 }
@@ -48,29 +47,26 @@
     color: #014137;
 }
 
-
-
 .menu .social-media-menu {
     height: 100px;
     display: flex;
     flex-direction: column;
 }
 
-.big-menu .social-media-menu {
+.menu-large .social-media-menu {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 
-.big-menu {
+.menu-large {
     width: 300px;
     z-index: 1;
 }
 
-.big-menu h3 {
+.menu-large h3 {
     font-weight: 200;
 }
-
 
 .logo {
     margin-top: 20px;
@@ -80,10 +76,49 @@
     align-items: center;
     gap: 9px;
 }
-.logo h1{
+
+.logo h1 {
     font-size: 30px;
 }
 
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #b8b8b8;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+#hamburger:hover .bar {
+    background-color: #0FE9C7; /* Cor ao passar o mouse */
+}
+
+#hamburger:active .bar {
+    background-color: #014137; /* Cor ao passar o mouse */
+}
+
+  
+#hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 10px);
+}
+
+#hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -10px);
+}
 
 .hidden {
     display: none;
@@ -100,51 +135,114 @@
 }
 
 
-.big-menu .social-media-menu {
+.menu-large .social-media-menu {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 
-.big-menu {
+.menu-large {
     width: 300px;
     z-index: 1;
 }
 
-.big-menu h3 {
+.menu-large h3 {
     font-weight: 200;
 }
 
-.big-menu .logo h1 {
+.menu-large .logo h1 {
     display: block
 }
 
-.big-menu ul li h3 {
+.menu-large ul li h3 {
     display: block;
 }
 
-.big-menu ul li .menu-icon {
+.menu-large ul li .menu-icon {
+    display: none;
+}
+.menu .menu-mobile {
     display: none;
 }
 
-#arrow {
-    font-size: 30px;
-    position: absolute;
-    top: 49%;
-    right: 0;
-    transform: translateX(110%);
-    color: #b8b8b8;
-    transition: color 0.3s ease;
+/*-------------------------------RESPONSIVIDADE---------------------------------------*/
+
+@media(max-width: 425px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding: 12px;
+    }
+
+    .menu .logo {
+        margin: 0 10px 0 0;
+        position: absolute;
+        top: 22px;
+    }
+
+    .menu .logo .text-logo {
+        display: block;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu .logo img {
+        width: 40px;
+    }
+
+    #hamburger {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        z-index: 200;
+    }
+
+    .menu-large  ul {
+        width: 100%;
+        height: 300px;
+    }
+    .menu-large  ul {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        background-color: #181818;
+    }
+
+    .menu ul li a svg {
+        display: none;
+    }
+
+    .menu .social-media-menu {
+        display: none;
+    }
+
+    .menu .social-media {
+        display: none;
+    }
+
+    .menu .menu-desktop {
+        display: none;
+    } 
 }
 
-#arrow:hover {
-    color: #0FE9C7;
-}
+@media(max-width: 270px) {
+    .menu .logo .text-logo {
+        width: 130px;
+    }
 
-#arrow:active{
-    color: #014137;
-}
-
-.big-menu #arrow {
-    transform: rotate(180deg);
+    .menu .logo {
+        top: 12px;
+        gap: 0;
+    }
 }
