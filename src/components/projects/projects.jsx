@@ -1,6 +1,6 @@
 import "./projects.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3Alt, faReact, faSquareJs, faFigma, faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3Alt, faReact, faSquareJs} from "@fortawesome/free-brands-svg-icons";
 
 function Projects() {
 
@@ -9,11 +9,13 @@ function Projects() {
             name: "Buscador GitHub",
             Description: "Página que busca dados de usuários da plataforma, como número de seguidores e eventos. Os dados são retornados através do uso da API do GitHub",
             image: "../images/project-api-github.png",
+            link: "https://github.com/vitor-hugo-machado/fetch-github-api",
             tools: [<FontAwesomeIcon key="html" className='menu-icon' icon={faHtml5} />,
             <FontAwesomeIcon key="css" className='menu-icon' icon={faCss3Alt} />,
             <FontAwesomeIcon key="js" className='menu-icon' icon={faSquareJs} />
             ]
         },
+       
     ]
     return (
 
@@ -33,12 +35,13 @@ function Projects() {
                         <div className="project-description">
                             <h3>{project.name}</h3>
                             <p>{project.Description}</p>
-                            <button>GitHub</button>
+                            <a href={project.link} target="_blank">GitHub</a>
                         </div>
                     </div>
                 )
                 )}
             </div>
+            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
         </div>
     )
 }

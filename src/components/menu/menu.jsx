@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faUser, faFileAlt, faPhone, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from '../social-media/social-media';
 
-function Menu() {
+function Menu({ setActiveSection }) {
     useEffect(() => {
         const arrow = document.getElementById('arrow'); 
         const menu = document.querySelector('.menu'); 
@@ -28,6 +28,7 @@ function Menu() {
             }
         };
     }, []);
+    
 
     return (
         <div className='menu'>
@@ -37,25 +38,25 @@ function Menu() {
             </div>
             <ul>
                 <li>
-                    <a href='#'>
+                    <a href='#' onClick={() => setActiveSection("Home")}>
                         <FontAwesomeIcon className='menu-icon' icon={faHouse} />
                         <h3 className='menu-item-name '>HOME</h3>
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='#' onClick={() => setActiveSection("Skills")}>
                         <FontAwesomeIcon className='menu-icon' icon={faUser} />
                         <h3 className='menu-item-name'>SKILLS</h3>
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='#' onClick={() => setActiveSection("Projects")}>
                         <FontAwesomeIcon className='menu-icon' icon={faFileAlt} />
                         <h3 className='menu-item-name'>PROJETOS</h3>
                     </a>
                 </li>
                 <li>
-                    <a href='#'>
+                    <a href='#' onClick={() => setActiveSection("Contact")}>
                         <FontAwesomeIcon className='menu-icon' icon={faPhone} />
                         <h3 className='menu-item-name'>CONTATO</h3>
                     </a>

@@ -1,6 +1,7 @@
 .projects {
     height: 100%;
     transform: translateX(5%);
+    position: absolute;
 }
 
 .projects h1 {
@@ -15,9 +16,8 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: 1px solid #10E7C5;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-top: 2px solid #363636;
+    border-bottom: 2px solid #363636;
 }
 
 
@@ -51,7 +51,7 @@
 
 }
 
-.project .project-description button {
+.project .project-description a {
     width: 30%;
     height: 10%;
     align-self: center;
@@ -62,6 +62,17 @@
     border-radius: 10px;
 }
 
-.project .project-description button:hover {
+.project .project-description a:hover {
     background-color: #4b4a4a;
+}
+
+.projects h6 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-59%);
+    font-size: 15px;
+    color: #5d5c5c;
+    font-weight: 200;
+    padding: 60px 0 10px;
 }

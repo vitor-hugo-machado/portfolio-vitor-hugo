@@ -1,13 +1,12 @@
 import './social-media.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function SocialMedia() {
     return (
         <>
-             <a className='icon-social-media' href=""><FontAwesomeIcon icon={faGithub} /></a>
-             <a className='icon-social-media' href=""><FontAwesomeIcon icon={faLinkedin} /></a>
+             <a className='icon-social-media' href="https://github.com/vitor-hugo-machado" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
+             <a className='icon-social-media' href="https://www.linkedin.com/in/vitor-hugo-alves-machado-82b73a320/" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
         </>
     )
 }

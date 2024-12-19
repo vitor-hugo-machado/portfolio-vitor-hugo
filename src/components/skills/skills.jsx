@@ -1,7 +1,6 @@
 import "./skills.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3Alt, faReact, faSquareJs, faFigma, faGitAlt } from "@fortawesome/free-brands-svg-icons";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 function Skills() {
     let technologies = [
@@ -46,6 +45,8 @@ function Skills() {
                 )}
                 <h3>GitFlow <span> | </span> GitHub<span> | </span>Context Api<span> | </span>Fetch Api<span> | </span>Styled Components</h3>
             </div>
+
+            <h6>Desenvolvido por Vitor Hugo 👨‍💻</h6>
         </div>
     )
 }
