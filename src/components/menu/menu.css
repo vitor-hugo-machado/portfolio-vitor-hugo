@@ -5,7 +5,7 @@
     justify-content: space-between;
     position: fixed;
     height: 100vh;
-    
+    padding-bottom: 20px;
     width: 60px;
     z-index: 200;
 }
