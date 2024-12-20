@@ -5,6 +5,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    align-self: center;
 }
 
 .container-contact h6 {
@@ -42,6 +43,28 @@
     justify-content: center;
     gap: 1%;
 }
+
+@media(max-width: 942px){
+    .container-contact {
+        transform: translateX(50px);
+    }
+
+}
+
+@media(max-width: 840px) {
+    .container-contact {
+        transform: translateX(0);
+        justify-content: start;
+    }
+}
+
+@media(max-width: 430px) {
+    .container-contact {
+        margin-top: 50px;
+    }
+}
+
+
 
 @media(max-width: 347px) {
     .container-contact h5 {

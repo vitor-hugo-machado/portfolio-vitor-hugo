@@ -14,12 +14,11 @@ function Home() {
                         <h4>HTML | CSS | JavaScript | React</h4>
                     </div>
                 </div>
-                <div className="photo-and-button">
+                <div className="photo">
                     <div className="photo-profile">
                         <div className="background-image"></div>
                         <img src="/images/Mask.jpg" alt="mask" width={250} />
                     </div>
-                    <a>CONTATO</a>
                 </div>
 
 
