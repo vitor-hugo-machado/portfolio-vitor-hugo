@@ -17,7 +17,7 @@ function Home() {
                 <div className="photo">
                     <div className="photo-profile">
                         <div className="background-image"></div>
-                        <img src="/images/Mask.jpg" alt="mask" width={250} />
+                        <img src="../public/images/Mask.jpg" alt="mask" width={250} />
                     </div>
                 </div>
 
