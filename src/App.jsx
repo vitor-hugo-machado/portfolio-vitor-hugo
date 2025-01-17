@@ -4,9 +4,43 @@ import Home from './components/home/home';
 import Skills from './components/skills/skills';
 import Projects from './components/projects/projects';
 import Contact from './components/contact/contact';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const menu = document.querySelector('.menu');
+      if (menu && !menu.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    const main = document.querySelector('main');
+    const menu = document.querySelector('.menu');
+
+    if (main && menu) {
+      const handleClick = () => {
+        menu.classList.remove('menu-large');
+      };
+
+      main.addEventListener('click', handleClick);
+
+      return () => {
+        main.removeEventListener('click', handleClick);
+      };
+    }
+  }, []);
 
 
   const [activeSection, setActiveSection] = useState("Home");

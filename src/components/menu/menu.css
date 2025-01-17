@@ -4,14 +4,27 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 20px;
     width: 60px;
     z-index: 200;
+    transition: width 0.3s ease;
 }
 
 .menu h1 {
-    display: none;
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    width: 200px;
+    transform: translateY(-100px);
+    transition: 0.7s ease-in-out;
+}
+
+
+#asterisco-logo {
+    position: absolute;
+    left: 10px;
+    top: 16px;
 }
 
 .menu ul li h3 {
@@ -106,15 +119,15 @@
 }
 
   
-#hamburger.active .bar:nth-child(1) {
+.menu-large #hamburger .bar:nth-child(1) {
     transform: rotate(45deg) translate(8px, 10px);
 }
 
-#hamburger.active .bar:nth-child(2) {
+.menu-large #hamburger .bar:nth-child(2) {
     opacity: 0;
 }
 
-#hamburger.active .bar:nth-child(3) {
+.menu-large #hamburger .bar:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -10px);
 }
 
@@ -142,6 +155,10 @@
 .menu-large {
     width: 300px;
     z-index: 200;
+}
+
+.menu-large .logo h1{
+    transform: translateY(0);
 }
 
 .menu-large h3 {
@@ -180,6 +197,7 @@
         width: 100%;
         height: 80px;
         flex-direction: row;
+        
         justify-content: space-between;
         position: relative;
         padding: 12px;
@@ -190,19 +208,19 @@
     .menu .logo {
         margin: 0 10px 0 0;
         position: absolute;
-        top: 22px;
+        transform: translateY(-5px);
+        
     }
 
     .menu .logo .text-logo {
-        display: block;
         font-size: 25px;
         display: flex;
         flex-direction: row;
+        transform: translate(0, 0);
     }
 
-    .menu .logo img {
-        width: 40px;
-    }
+   
+    
 
     #hamburger {
         display: flex;

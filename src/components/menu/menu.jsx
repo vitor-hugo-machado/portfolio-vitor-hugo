@@ -30,7 +30,7 @@ function Menu({ setActiveSection }) {
         <div className='menu'>
             <div className='logo'>
                 <h1 className='text-logo'>VITOR HUGO</h1>
-                <img src='/images/asterisco.png' alt='logo' width={40} />
+                <img id='asterisco-logo' src='/images/asterisco.png' alt='logo' width={40} />
             </div>
             <div className="hamburger" id="hamburger">
                     <span className="bar"></span>
