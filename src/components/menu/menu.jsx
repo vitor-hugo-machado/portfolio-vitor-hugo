@@ -1,7 +1,7 @@
 import './menu.css'
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faUser, faFileAlt, faPhone, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faUser, faFileAlt, faPhone} from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from '../social-media/social-media';
 
 function Menu({ setActiveSection }) {
@@ -11,8 +11,8 @@ function Menu({ setActiveSection }) {
         const menu = document.querySelector('.menu');
     
         const handleMenuToggle = () => {
-            menu.classList.toggle('menu-large'); // Alterna o estado do menu
-            hamburger.classList.toggle('active'); // Alterna o estado do botão
+            menu.classList.toggle('menu-large');
+            hamburger.classList.toggle('active'); 
         };
     
         if (hamburger) {
